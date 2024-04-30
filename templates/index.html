@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="chatbox">
+            <div class="header">
+                <h1>Engineering Career Chatbot</h1>
+            </div>
+            <div class="body" id="chatBody">
+                <div class="message bot-message">
+                    <img src="/static/images/bot.png" alt="Bot Avatar" class="avatar">
+                    <div class="message-text">Hi, nice to meet you! How can I assist you today? You can ask about placements, masters, startups, or how to enhance your soft skills. Type 'exit' to quit.?</div>
+                </div>
+            </div>
+            <div class="input">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
